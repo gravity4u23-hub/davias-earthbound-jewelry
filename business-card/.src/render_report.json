@@ -1,0 +1,79 @@
+{
+  "ok": true,
+  "pdf": "/home/hatch/workspace/goals/jamiry-healing-bead-jewelry/files/davias-business-card/davias-business-card.pdf",
+  "pages": 0,
+  "pngs": [],
+  "fonts": {
+    "missing": [],
+    "unused": [],
+    "used": [
+      "Noto Sans",
+      "Noto Serif",
+      "Caveat"
+    ],
+    "expected": [
+      "Caveat:700",
+      "Noto Sans:400"
+    ]
+  },
+  "overflow": [],
+  "text_floor": [
+    {
+      "index": 0,
+      "runs": []
+    },
+    {
+      "index": 1,
+      "runs": [
+        {
+          "pt": 8,
+          "chars": 139,
+          "max_node_chars": 33,
+          "sample": "Davias Earthbound Jewelry"
+        },
+        {
+          "pt": 8.5,
+          "chars": 50,
+          "max_node_chars": 24,
+          "sample": "747-528-7039"
+        },
+        {
+          "pt": 24,
+          "chars": 12,
+          "max_node_chars": 12,
+          "sample": "Feel the Power"
+        }
+      ]
+    }
+  ],
+  "image_resolution": [
+    {
+      "index": 0,
+      "images": [
+        {
+          "rendered_w": 289.1,
+          "natural_w": 1920,
+          "src_head": "data:image/jpeg;base64,/9j/4AAQSkZJRgABA"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "images": [
+        {
+          "rendered_w": 49.1,
+          "natural_w": 620,
+          "src_head": "data:image/png;base64,iVBORw0KGgoAAAANSU"
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "failures": [],
+    "advisories": []
+  },
+  "gate_failures": [],
+  "advisories": [
+    "most text renders at 8pt, below the 10pt body target; acceptable only when the brief asks for a compact document"
+  ]
+}

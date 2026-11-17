@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Davias Earthbound Jewelry - Business Card</title>
+<style>
+@page { size: 89mm 51mm; margin: 0; }
+* { box-sizing: border-box; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+body { margin: 0; font-family: 'Noto Sans', sans-serif; background: #000000; }
+@font-face { font-family: 'Pinyon Script'; src: url(__FONT_DATA_URI__) format('truetype'); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'Playfair Display'; src: url(__PLAYFAIR_DATA_URI__) format('truetype'); font-weight: 700; font-style: normal; }
+@font-face { font-family: 'Cinzel'; src: url(__CINZEL_DATA_URI__) format('truetype'); font-weight: 700; font-style: normal; }
+.page { width: 89mm; height: 51mm; min-height: 51mm; overflow: hidden; page-break-after: always; break-inside: avoid; page-break-inside: avoid; position: relative; }
+.page:last-child { page-break-after: auto; }
+.front { background: #060a18; padding: 0; display: flex; align-items: center; justify-content: center; }
+.front img { display: block; width: 89mm; height: 51mm; max-width: 89mm; max-height: 51mm; object-fit: contain; object-position: center center; }
+.back { background: linear-gradient(135deg, #0a1122 0%, #141f42 55%, #0a1122 100%); color: #eef1ff; padding: 4.2mm 5mm 4mm; display: flex; flex-direction: column; gap: 1.1mm; }
+.back::before { content: ""; position: absolute; inset: 1.5mm; border: 0.28mm solid rgba(238,207,111,0.9); pointer-events: none; }
+.back::after { content: ""; position: absolute; inset: 2.4mm; border: 0.16mm solid rgba(238,207,111,0.55); pointer-events: none; }
+.headline { text-align: center; position: relative; padding-top: 0.2mm; }
+.headline h1 { font-family: 'Cinzel', 'Noto Serif Display', serif; font-style: normal; font-weight: 700; font-size: 18pt; line-height: 1.1; letter-spacing: 0.09em; margin: 0 0 0.6mm; padding: 0 1mm; color: #eecf6f; white-space: nowrap; text-transform: uppercase; }
+.sub { font-size: 8pt; line-height: 1.3; color: #d8deff; margin: 0; white-space: nowrap; }
+.sub b { font-weight: 700; color: #d3b3ff; }
+.rule { width: 44mm; height: 2mm; margin: 1mm auto 0; }
+.rule svg { display: block; width: 100%; height: 100%; }
+.dots { display: flex; justify-content: center; align-items: center; gap: 2mm; margin-top: 1.3mm; }
+.dots span { width: 2.2mm; height: 2.2mm; border-radius: 50%; display: block; }
+.dots .d1 { background: #ffffff; border: 0.2mm solid rgba(20,20,20,0.25); }
+.dots .d2 { background: #b07d2b; }
+.dots .d3 { background: #2e9e62; }
+.dots .d4 { background: #8b5cc7; }
+.dots .d5 { background: #f5e08a; border: 0.2mm solid rgba(20,20,20,0.18); }
+.main { flex: 1; min-height: 0; display: flex; flex-direction: row; align-items: center; gap: 3.5mm; }
+.contacts { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; gap: 1.1mm; }
+.row { display: flex; align-items: center; gap: 2mm; min-height: 4.4mm; }
+.chip { width: 4.4mm; height: 4.4mm; flex: 0 0 4.4mm; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.chip svg { width: 3mm; height: 3mm; display: block; }
+.chip.phone { background: #1f9d63; }
+.chip.email { background: #d4af37; }
+.chip.instagram { background: linear-gradient(45deg, #f9ce34, #ee2a7b 55%, #6228d7); }
+.chip.tiktok { background: #111111; border: 0.25mm solid #3a4568; }
+.chip.x { background: #000000; border: 0.25mm solid #3a4568; }
+.chip.pinterest { background: #e60023; }
+.socialgroup { display: flex; align-items: center; gap: 1.2mm; flex: 0 0 auto; }
+.handle { font-size: 8.5pt; color: #ffffff; white-space: nowrap; line-height: 1; }
+.handle.email { font-size: 8pt; letter-spacing: -0.03em; }
+.qr { width: 15.5mm; flex: 0 0 15.5mm; display: flex; flex-direction: column; align-items: center; gap: 1mm; }
+.qr img { display: block; width: 13mm; height: 13mm; max-width: 13mm; max-height: 13mm; object-fit: contain; background: #ffffff; padding: 1mm; border-radius: 1.2mm; }
+.qr p { font-size: 8pt; line-height: 1.25; letter-spacing: 0.08em; text-transform: uppercase; text-align: center; color: #f3d98b; margin: 0; }
+.footer { border-top: 0.25mm solid rgba(212,175,55,0.35); padding-top: 1.4mm; text-align: center; font-family: 'Noto Serif', serif; font-size: 8pt; line-height: 1; color: #d8deff; white-space: nowrap; }
+.footer i { color: #aebdf5; }
+</style>
+</head>
+<body>
+<div class="page front">
+  <img src="__LOGO_DATA_URI__" alt="Davias Earthbound Jewelry logo: a circle of natural crystal beads around the Earth over a blue Flower of Life, on dark slate with golden galaxies behind">
+</div>
+<div class="page back">
+  <div class="headline">
+    <h1>FEEL THE POWER</h1>
+    <p class="sub"><b>Davias Earthbound Jewelry</b> &nbsp;&middot;&nbsp; All-Natural Crystal Jewelry</p>
+    <div class="rule"><svg viewBox="0 0 440 20" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="gl" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="212" y2="0"><stop offset="0" stop-color="#d4af37" stop-opacity="0"/><stop offset="1" stop-color="#d4af37"/></linearGradient><linearGradient id="gr" gradientUnits="userSpaceOnUse" x1="228" y1="0" x2="440" y2="0"><stop offset="0" stop-color="#d4af37"/><stop offset="1" stop-color="#d4af37" stop-opacity="0"/></linearGradient></defs><line x1="2" y1="10" x2="206" y2="10" stroke="url(#gl)" stroke-width="2.4"/><line x1="234" y1="10" x2="438" y2="10" stroke="url(#gr)" stroke-width="2.4"/><polygon points="220,1.5 228.5,10 220,18.5 211.5,10" fill="#e9c766"/></svg></div>
+    <div class="dots" aria-hidden="true"><span class="d1"></span><span class="d2"></span><span class="d3"></span><span class="d4"></span><span class="d5"></span></div>
+  </div>
+  <div class="main">
+  <div class="contacts">
+    <div class="row"><span class="chip phone"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></span><span class="handle">747-528-7039</span></div>
+    <div class="row"><span class="chip email"><svg viewBox="0 0 24 24" fill="#1a1405"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span><span class="handle email">DaviasEarthBoundJewelry@gmail.com</span></div>
+    <div class="row"><span class="socialgroup"><span class="chip instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="#fff" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="#fff" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.4" fill="#fff"/></svg></span><span class="chip tiktok"><svg viewBox="0 0 24 24" fill="#fff"><path d="M16.6 3c.4 2.1 1.9 3.6 4 3.9v3c-1.6 0-3-.5-4-1.3v6.6c0 3.6-2.6 6-6.1 6-3.4 0-6-2.5-6-5.9 0-3.5 2.8-6.1 6.4-5.9v3.1c-1.7-.3-3.3.9-3.3 2.7 0 1.6 1.3 2.8 2.9 2.8 1.7 0 3-1.3 3-3.1V3h3.1z"/></svg></span><span class="chip x"><svg viewBox="0 0 24 24" fill="#fff"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L2.8 2h6.4l4.4 5.9L18.9 2zm-1.1 18h1.7L7.1 3.9H5.3L17.8 20z"/></svg></span></span><span class="handle">@DaviasJewelry</span></div>
+    <div class="row"><span class="chip pinterest"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.5 2 2 6.5 2 12c0 4.2 2.6 7.8 6.3 9.3-.1-.8-.2-2 0-2.9l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.4 1.8-2.4.9 0 1.3.6 1.3 1.4 0 .9-.6 2.2-.9 3.4-.2 1 .5 1.9 1.5 1.9 1.9 0 3.3-2 3.3-4.8 0-2.5-1.8-4.3-4.4-4.3-3 0-4.7 2.2-4.7 4.5 0 .9.3 1.9.8 2.4.1.1.1.2.1.3l-.3 1.1c0 .2-.2.2-.4.1-1.2-.6-2-2.4-2-3.9 0-3.2 2.3-6.1 6.7-6.1 3.5 0 6.2 2.5 6.2 5.8 0 3.5-2.2 6.3-5.3 6.3-1 0-2-.5-2.3-1.2l-.6 2.4c-.2.9-.8 2-1.2 2.6.9.3 1.9.4 2.9.4 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg></span><span class="handle">@daviasearthboundjewelry</span></div>
+  </div>
+  <div class="qr">
+    <img src="__QR_DATA_URI__" alt="QR code linking to Davias Jewelry on Instagram">
+    <p>Scan to follow</p>
+  </div>
+  </div>
+  <div class="footer">Bracelets &middot; Earrings &middot; Necklaces &nbsp;&mdash;&nbsp; <i>Handmade with love</i></div>
+</div>
+</body>
+</html>
