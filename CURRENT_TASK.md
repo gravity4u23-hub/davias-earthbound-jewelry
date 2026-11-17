@@ -25,14 +25,17 @@ Repo live Nov 17, 2026. Identity built. Master plan awaiting full owner approval
 2. Muse/Atlas: review for brand voice, science accuracy, and anything that still feels woo-woo.
 3. Grok: keep CURRENT_TASK and HIVEMIND updated as decisions come in.
 
+## Roles (owner confirmed)
+- **Octavia:** makes the bracelets. Helps with ideas and how/where to sell them. Very important to the business.
+- **David:** does most of everything else (operations, marketing, content, site, etc.).
+
 ## Open decisions — still need owner answers before full launch
 
 1. Does the fixed business-card PDF open right on his phone?
-2. Who does what between David and Octavia.
-3. How people order and pay at first (DM to order proposed; payment method TBD).
-4. Card back wording — list the five starting stones, or say any and all crystal beads?
-5. Purple mesh bags — 200-pack, 3x4", $11.99 at Walmart — are those the jewelry bags? If yes, ship to Calabasas or Arizona?
-6. Handles — claim in the order in the plan, or pick a favorite first.
+2. How people order and pay at first (DM to order proposed; payment method TBD).
+3. Card back wording — list the five starting stones, or say any and all crystal beads?
+4. Purple mesh bags — 200-pack, 3x4", $11.99 at Walmart — are those the jewelry bags? If yes, ship to Calabasas or Arizona?
+5. Handles — claim in the order in the plan, or pick a favorite first.
 
 ## Rules
 
