@@ -22,18 +22,20 @@ Repo live Nov 17, 2026. Identity built. Master plan awaiting full owner approval
 - Remove the woo-woo. Stick to the honesty engine already in the master plan: Proven / Traditional / Open. No medical or cure claims.
 
 ### New features requested (Nov 17)
-See `PRODUCT_AND_CONTENT_IDEAS.md` for full detail:
+See `PRODUCT_AND_CONTENT_IDEAS.md` and `MONTHLY_DROP_IDEAS.md` for full detail:
 - Cartoon-style fun educational videos about crystals, wearing them, and how to use them
 - Jewelry design ideas (color/crystal combos that mesh, unique high-end look at low price, charms)
 - Packaging and display ideas (premium feel, cheap to produce)
 - Site section where users input desired crystal combinations or properties → suggestions
 - Q&A / recommendation area that points people in the right direction (science-first)
-- **Monthly limited one-of-a-kind drop:** once a month, limited quantity of a unique piece (bracelet/earring/anklet/necklace) sold at a premium for 24–72 hours. Create scarcity/rarity so buyers feel special and smart. Still science-first, no woo-woo.
+- **Monthly limited drop:** once a month. Start with ~100 pieces while building following; scale toward 1,000 only after proven demand. Sell at a premium for 24–72 hours. Create scarcity so buyers feel special and smart. Still science-first.
+- 20 ready drop concepts in `MONTHLY_DROP_IDEAS.md`.
+- Focused marketing + content mission to drive traffic and sell volume.
 
 ### Next actions for agents
 1. Claude: draft a clean, mobile-first, **upscale and professional** storefront structure (simple product grid, education section per stone, about/story, contact/order path, customizer/recommendation section). Include a simple way to feature the monthly limited drop. Use the company Gmail for contact forms and account setup. Start from WEBSITE_BRIEF.md + PRODUCT_AND_CONTENT_IDEAS.md. Make it feel premium and trustworthy.
-2. Muse/Atlas: expand creative ideas for videos, unique jewelry looks, packaging, charms, and the monthly drop (storytelling, countdown style, how to make the piece feel exclusive). Challenge anything that drifts into woo-woo. Review for brand voice, science accuracy, and premium feel.
-3. Grok: keep CURRENT_TASK and HIVEMIND updated as decisions come in.
+2. Muse/Atlas: expand creative ideas for videos, unique jewelry looks, packaging, charms, and the monthly drop (storytelling, countdown style, how to make the piece feel exclusive). Use the 20 concepts in MONTHLY_DROP_IDEAS.md. Challenge anything that drifts into woo-woo. Review for brand voice, science accuracy, and premium feel.
+3. Grok: keep CURRENT_TASK and HIVEMIND updated as decisions come in. Help shape marketing and content systems that drive real sales.
 
 ## Roles (owner confirmed)
 - **Octavia:** makes the bracelets. Helps with ideas and how/where to sell them. Very important to the business.
