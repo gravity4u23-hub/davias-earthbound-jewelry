@@ -1,13 +1,16 @@
 # Davias Earthbound Jewelry — Master Plan
 
-Built Nov 8, 2026, from the user's own words in the main chat. Nothing here posts, publishes, or gets claimed without his tap. Open decisions are listed at the end — nothing invented for them.
+Built Nov 8, 2026, from the user's own words in the main chat. Updated Nov 17, 2026 with domain, Gmail, and roles. Nothing here posts, publishes, or gets claimed without his tap. Open decisions are listed at the end — nothing invented for them.
 
 ## 1. Who we are
 
 - **Davias Earthbound Jewelry** — created by David + Octavia. "Davia" = David + Octavia.
-- All-natural crystal jewelry: bracelets, earrings, necklaces, everything. Natural polished stones. **Scope (user, Nov 9): any and all crystal stone beads — not just the five named on Nov 8. The five are the starting set, not the limit.**
-- **Mission (user, Nov 8):** bridge the gap with crystals and energies. Demystify the properties of the stones — real science, real effects, real applications, how to use them to harmonize energies and bodies, backed by real science and studies where they exist.
+- All-natural crystal jewelry: bracelets, earrings, necklaces, anklets, everything. Natural polished stones. **Scope (user, Nov 9): any and all crystal stone beads — not just the five named on Nov 8. The five are the starting set, not the limit.**
+- **Mission (user, Nov 8):** bridge the gap with crystals and energies. Demystify the properties of the stones — real science, real effects, real applications, how to use them to harmonize energies and bodies, backed by real science and studies where they exist. Science first, tradition clearly labeled, no woo-woo.
 - **Story in one line:** two people, bound to the Earth by the stones — the universe, the cosmic birthing, love and connection.
+- **Roles (owner confirmed Nov 17):**
+  - **Octavia:** makes the bracelets. Helps with ideas and how/where to sell them. Very important to the business.
+  - **David:** does most of everything else (operations, marketing, content, site, etc.).
 
 ## 2. Brand kit
 
@@ -70,7 +73,9 @@ The line covers any and all crystal stone beads (user, Nov 9). These five are th
 
 **First — Instagram, TikTok, Pinterest.** That's where jewelry gets discovered.
 **After — Facebook Page, then YouTube**, tied into The Bridge.
-One name and one handle everywhere, all signed up under the **company Gmail** (address still TBD — ask), never the personal email, so the business is its own thing.
+One name and one handle everywhere, all signed up under the **company Gmail**: Daviasearthboundjewelry@gmail.com — never the personal email, so the business is its own thing.
+
+**Domain:** daviasearthboundjewelry.love (Bluehost)
 
 **Handles to try, in order** (not checked live — claim at signup, first come first served):
 1. `@davias.earthbound.jewelry`
@@ -117,13 +122,11 @@ Payment method at first: **TBD — user to decide** (no payment move without his
 ## 9. Open decisions — nothing moves until he answers
 
 1. Does the fixed business-card PDF open right on his phone?
-2. Company Gmail address (exists, address TBD).
-3. Who does what between David and Octavia.
-4. How people order and pay at first (DM proposed; payment method TBD).
-5. Phone / email / Instagram for the business card back.
-6. Purple drawstring mesh bags — the 200-pack, 3x4", $11.99 at Walmart (Tripumer, free shipping) — are those the jewelry bags? If yes, ship to Calabasas or to him in Arizona? (User, Nov 9: not bought yet.)
-7. Handles — claim in the order listed, or pick a favorite first.
-8. Card back wording — list the five starting stones, or say any and all crystal beads? (Deferred Nov 9 — website comes first; user already has domain + host, details to come.)
+2. How people order and pay at first (DM proposed; payment method TBD).
+3. Phone / email / Instagram for the business card back.
+4. Purple drawstring mesh bags — the 200-pack, 3x4", $11.99 at Walmart (Tripumer, free shipping) — are those the jewelry bags? If yes, ship to Calabasas or to him in Arizona? (User, Nov 9: not bought yet.)
+5. Handles — claim in the order listed, or pick a favorite first.
+6. Card back wording — list the five starting stones, or say any and all crystal beads? (Deferred Nov 9 — website comes first; user already has domain + host, details to come.)
 
 ## Sources and limits
 
