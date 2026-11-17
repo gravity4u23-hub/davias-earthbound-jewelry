@@ -28,13 +28,21 @@ Agents: generate 8–10 short video concepts (script outline + visual style note
 - System suggests matching pieces or builds a custom idea
 - Q&A area where people can ask questions and get pointed in the right direction (science-first answers only)
 
-## 5. Monthly limited one-of-a-kind drop (NEW)
+## 5. Monthly limited one-of-a-kind drop
 Once a month, drop a limited quantity of a one-of-a-kind piece (bracelet, earring, anklet, and/or necklace) for a short window of 24–72 hours.
 - Sell at a premium to create scarcity and rarity
 - Make the piece feel special and exclusive
 - Goal: people feel special and smart for buying it
 - Marketing: countdown, “only X made,” story behind the specific crystals/colors chosen that month
 - Still follows honesty engine — science-first, no woo-woo claims
+
+## 6. Beach-themed pieces (NEW)
+Owner idea: beach ones with seashells, starfish, etc.
+- Bracelets, anklets, necklaces, earrings that mix crystals with real or high-quality shell/starfish accents
+- Color stories: blues, whites, soft greens, sandy tones + crystal accents
+- Ideas: shell spacer beads, small starfish charms, ocean-inspired spacing, beach photography
+- Keep science-first: crystals still get Proven/Traditional/Open labels; shells are decorative
+- Strong seasonal and gifting potential (summer, vacation, coastal markets)
 
 ## Honesty rules (apply to all of the above)
 - Proven / Traditional / Open labels on every claim
