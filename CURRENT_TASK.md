@@ -31,11 +31,11 @@ See `PRODUCT_AND_CONTENT_IDEAS.md`, `MONTHLY_DROP_IDEAS.md`, and `MARKETING_PLAY
 - **Monthly limited drop:** once a month. Start with ~100 pieces while building following; scale toward 1,000 only after proven demand. Sell at a premium for 24–72 hours. Create scarcity so buyers feel special and smart. Still science-first.
 - 20 ready drop concepts in `MONTHLY_DROP_IDEAS.md`.
 - Full marketing & selling playbook in `MARKETING_PLAYBOOK.md` (content mix, scarcity, platforms, process videos).
-- Expand into every market: country/flag color bracelets, sports team bracelets, Christmas/holidays, religious occasions. Science-first labeling always.
+- Expand into every market: country/flag color bracelets, sports team bracelets, Christmas/holidays, religious occasions, **beach-themed pieces with shells/starfish**. Science-first labeling always.
 
 ### Next actions for agents
-1. Claude: draft a clean, mobile-first, **upscale and professional** storefront structure. Support product categories (core stones, country/flag, sports teams, holidays). Include customizer/recommendation section and monthly drop feature. Use company Gmail. Start from WEBSITE_BRIEF.md + other idea files. Make it feel premium and trustworthy.
-2. Muse/Atlas: expand creative ideas for videos, unique jewelry looks, packaging, charms, monthly drops, and new markets (flags, teams, holidays). Challenge anything that drifts into woo-woo. Review for brand voice, science accuracy, and premium feel.
+1. Claude: draft a clean, mobile-first, **upscale and professional** storefront structure. Support product categories (core stones, country/flag, sports teams, holidays, beach). Include customizer/recommendation section and monthly drop feature. Use company Gmail. Start from WEBSITE_BRIEF.md + other idea files. Make it feel premium and trustworthy.
+2. Muse/Atlas: expand creative ideas for videos, unique jewelry looks, packaging, charms, monthly drops, and new markets (flags, teams, holidays, beach shells/starfish). Challenge anything that drifts into woo-woo. Review for brand voice, science accuracy, and premium feel.
 3. Grok: keep CURRENT_TASK and HIVEMIND updated. Continue refining marketing tactics from real results.
 
 ## Roles (owner confirmed)
