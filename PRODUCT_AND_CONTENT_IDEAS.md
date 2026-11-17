@@ -28,6 +28,14 @@ Agents: generate 8–10 short video concepts (script outline + visual style note
 - System suggests matching pieces or builds a custom idea
 - Q&A area where people can ask questions and get pointed in the right direction (science-first answers only)
 
+## 5. Monthly limited one-of-a-kind drop (NEW)
+Once a month, drop a limited quantity of a one-of-a-kind piece (bracelet, earring, anklet, and/or necklace) for a short window of 24–72 hours.
+- Sell at a premium to create scarcity and rarity
+- Make the piece feel special and exclusive
+- Goal: people feel special and smart for buying it
+- Marketing: countdown, “only X made,” story behind the specific crystals/colors chosen that month
+- Still follows honesty engine — science-first, no woo-woo claims
+
 ## Honesty rules (apply to all of the above)
 - Proven / Traditional / Open labels on every claim
 - No medical or cure claims
