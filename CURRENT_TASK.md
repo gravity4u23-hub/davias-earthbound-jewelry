@@ -9,66 +9,80 @@ Repo live Nov 17, 2026. Identity built. Master plan awaiting full owner approval
 **Company Gmail:** Daviasearthboundjewelry@gmail.com
 
 ### Mission for the site
-- Upscale, beautiful, professional storefront for handmade-with-love crystal beaded jewelry:
-  - Bracelets
-  - Earrings
-  - Necklaces
-  - Anklets
-- Easy to navigate and understand. Generous space, high-quality photos, clear language.
-- Room to expand product lines as money comes in.
-- Sell and market on TikTok, Facebook, and every other platform that allows selling.
-- Create amazing content that also educates people on the real properties and applications of the crystals.
-- Incorporate all available science on crystal properties.
-- Remove the woo-woo. Stick to the honesty engine already in the master plan: Proven / Traditional / Open. No medical or cure claims.
+Upscale, beautiful, professional, **spectacular** storefront for handmade-with-love authentic crystal jewelry. Science-first honesty engine (Proven / Traditional / Open). No medical or cure claims. Premium feel, mobile-first, easy to navigate.
 
-### New features requested (Nov 17)
-See `PRODUCT_AND_CONTENT_IDEAS.md`, `MONTHLY_DROP_IDEAS.md`, and `MARKETING_PLAYBOOK.md` for full detail:
-- Cartoon-style fun educational videos about crystals, wearing them, and how to use them
-- Jewelry design ideas (color/crystal combos that mesh, unique high-end look at low price, charms)
-- Packaging and display ideas (premium feel, cheap to produce)
-- Site section where users input desired crystal combinations or properties → suggestions
-- Q&A / recommendation area that points people in the right direction (science-first)
-- **Monthly limited drop:** once a month. Start with ~100 pieces while building following; scale toward 1,000 only after proven demand. Sell at a premium for 24–72 hours. Create scarcity so buyers feel special and smart. Still science-first.
-- 20 ready drop concepts in `MONTHLY_DROP_IDEAS.md`.
-- Full marketing & selling playbook in `MARKETING_PLAYBOOK.md` (content mix, scarcity, platforms, process videos).
-- Expand into every market: country/flag color bracelets, sports team bracelets, Christmas/holidays, religious occasions, **beach-themed pieces with shells/starfish**. Science-first labeling always.
+### PRIORITY: Integrate the Helix Collection (from Grok conversation)
+The owner wants the specific double-helix, triple-helix, and single-strand authentic crystal bracelet designs we developed, with catchy names and skin-tone / eye / hair matching. These are the featured pieces.
+
+**Exact designs to add (use these names, stone combos, and matching text):**
+
+1. **Violet Vortex** — Amethyst + Clear Quartz — Double Helix  
+   Complements: Cool & neutral skin · Blue or green eyes · Dark or silver hair.
+
+2. **Earthfire Twist** — Tiger’s Eye + Onyx — Double Helix  
+   Complements: Warm & olive skin · Brown or hazel eyes · Warm brown or black hair.
+
+3. **Blush Trinity** — Rose Quartz + Pink Tourmaline — Triple Helix  
+   Complements: Fair to medium skin · Light eyes · Blonde or light brown hair.
+
+4. **Reef Ripple** — Amazonite + Aquamarine — Double Helix  
+   Complements: Cool skin tones · Blue eyes · Ash or dark hair.
+
+5. **Ember & Ice** — Carnelian + Clear Quartz — Double Helix  
+   Complements: Warm skin tones · Amber or brown eyes · Red or warm brown hair.
+
+6. **Northern Lights** — Labradorite + Moonstone — Double Helix  
+   Complements: Cool & neutral tones · Any eye color · Dark or silver hair.
+
+7. **Jungle Gold** — Citrine + Green Aventurine — Double Helix  
+   Complements: Warm & golden skin · Brown or green eyes · Warm hair colors.
+
+8. **Amber Mist** — Amber + Smoky Quartz — Double Helix  
+   Complements: Warm, olive, and medium skin · Brown eyes and hair.
+
+9. **Lapis Current** — Lapis Lazuli — Double Helix  
+   Complements: Cool and neutral skin · Blue eyes · Dark hair.
+
+10. **Obsidian Spiral** — Black Tourmaline + Obsidian — Triple Helix  
+    Complements: All skin tones. Striking against warm complexions and light eyes.
+
+11. **Amethyst Strand** — Amethyst — Single Strand  
+    Complements: Cool skin tones · Blue or violet eyes.
+
+12. **Tiger’s Eye Strand** — Tiger’s Eye — Single Strand  
+    Complements: Warm and olive skin · Brown eyes · Warm hair.
+
+**Requirements for the spectacular build:**
+- Keep the existing multi-page structure and data-driven approach (`website/src/data.py`).
+- Feature the helix collection prominently (especially on Home and Shop).
+- Add skin-tone / eye / hair matching notes on every product card and product page.
+- Working filters: All / Double Helix / Triple Helix / Single Strand.
+- Working Crystal Finder / quiz that recommends based on Cool / Warm / Neutral undertone (and ideally eye/hair).
+- Organized, beautiful inventory. Premium dark earthy-luxury aesthetic.
+- Prices can stay "Ask for price" until owner sets them, or use the suggested ranges from earlier ($95–$168).
+- Replace placeholder images when real photos are available; for now keep the strand visuals but make the overall presentation spectacular.
+- Maintain honesty engine. No woo-woo. Real stones, real mineral facts.
 
 ### Next actions for agents
-1. Claude: draft a clean, mobile-first, **upscale and professional** storefront structure. Support product categories (core stones, country/flag, sports teams, holidays, beach). Include customizer/recommendation section and monthly drop feature. Use company Gmail. Start from WEBSITE_BRIEF.md + other idea files. Make it feel premium and trustworthy.
-2. Muse/Atlas: expand creative ideas for videos, unique jewelry looks, packaging, charms, monthly drops, and new markets (flags, teams, holidays, beach shells/starfish). Challenge anything that drifts into woo-woo. Review for brand voice, science accuracy, and premium feel.
-3. Grok: keep CURRENT_TASK and HIVEMIND updated. Continue refining marketing tactics from real results.
+1. **Claude:** Update `website/src/data.py` with the full helix collection above (exact names, stones, matching text). Rebuild the site so the helix pieces are the featured inventory. Add the matching system and filters. Make the visual presentation and product experience spectacular and premium. Push the changes.
+2. **Atlas/Muse:** Review the updated site for brand voice, science accuracy, premium feel, and any drift into claims. Challenge weak copy. Suggest visual or content improvements.
+3. **Grok:** Keep this task updated. Integrate owner feedback. Help refine matching logic and product presentation.
 
 ## Roles (owner confirmed)
 - **Octavia:** makes the bracelets. Helps with ideas and how/where to sell them. Very important to the business.
 - **David:** does most of everything else (operations, marketing, content, site, etc.).
 
-## Business cards
-Final PDF and source files are in `business-card/`. Owner has ordered them. Confirm they open correctly on phone if needed.
-
 ## Open decisions — still need owner answers before full launch
-
-1. Does the fixed business-card PDF open right on his phone?
-2. How people order and pay at first (DM to order proposed; payment method TBD).
-3. Card back wording — list the five starting stones, or say any and all crystal beads?
-4. Purple mesh bags — 200-pack, 3x4", $11.99 at Walmart — are those the jewelry bags? If yes, ship to Calabasas or Arizona?
-5. Handles — claim in the order in the plan, or pick a favorite first.
+1. Prices for the helix pieces.
+2. Real product photos of the helix designs.
+3. Payment method.
+4. First monthly drop date and design.
+5. Remaining items from master plan (business card confirmation, handles, packaging).
 
 ## Claude Progress
-
-**Nov 17, 2026: Website built. Grok, please review.** Not live yet; Bluehost upload waits for the owner.
-
-- **Grok: the site is now on `main` in the `website/` folder.** Open `website/site/index.html` (and the other pages) right here in the repo.
-- Owner-only preview on claude.ai (needs his login, so other agents can't open it): https://claude.ai/artifact/H8FE1Z3LnVsEPNL1jehbfP
-- **Code:** PR #3, https://github.com/gravity4u23-hub/davias-earthbound-jewelry/pull/3 (branch `claude/website-draft`)
-  - `website/site/`: the finished site (upload this to Bluehost `public_html`)
-  - `website/src/data.py`: all content: products, stones, contact, prices (None = "Ask for price")
-  - `website/README.md`: build and Bluehost upload steps
-- **Pages:** Home, Shop (filters), 13 product pages, Stone Guide (6 stones), Monthly Drop, Crystal Finder + FAQ, Our Story, Order bag.
-- **Grok:** please check the copy against the honesty engine, the product names and stories, and the FAQ answers. Suggest changes as PR comments or edits to `data.py`.
-- **Owner still needs to give:** product photos, prices, payment method, first drop date.
+**Nov 17, 2026:** Initial multi-page site built and pushed. Owner reviewed and requested the helix collection + skin-tone matching from the Grok conversation be integrated, and the overall site made spectacular.
 
 ## Rules
-
 - Nothing posts or publishes without the owner's tap.
 - Honesty engine: every claim labeled Proven / Traditional / Open. No medical claims.
 - Logo never recolored without the owner's say-so.
