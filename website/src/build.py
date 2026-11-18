@@ -159,7 +159,7 @@ def build():
     <div class="copy">
       <span class="eyebrow">Davias Earthbound Jewelry</span>
       <h1>Real stones, real science, <em>made by hand</em> with love.</h1>
-      <p class="lede">Natural crystal bracelets, earrings, necklaces and anklets, strung one bead at a time by Octavia. Every piece comes with the honest story of its stone: what science shows, what tradition says, and which is which.</p>
+      <p class="lede">Natural crystal bracelets, earrings, necklaces and anklets. Every piece comes with the honest story of its stone: what science shows, what tradition says, and which is which.</p>
       <div class="ctas">
         <a class="btn solid" href="shop.html">Shop the collection</a>
         <a class="btn ghost" href="drop.html">This month's drop</a>
@@ -225,7 +225,7 @@ def build():
   <div class="grid" id="products">{"".join(piece_card(p) for p in PRODUCTS)}</div>
   <div class="themes" style="margin-top:48px"><span class="eyebrow">Coming soon</span>
     <div class="chips">{"".join(f'<span class="chip soon">{e(t)}</span>' for t in THEMES)}</div>
-    <p class="note">Want one of these now? <a href="order.html">Ask us</a>; Octavia takes custom requests.</p></div>
+    <p class="note">Want one of these now? <a href="order.html">Ask us</a>.</p></div>
 </div></section>
 """, desc="Shop handmade natural crystal bracelets, earrings, necklaces and anklets.", current="shop.html")
 
@@ -258,7 +258,6 @@ def build():
       <div><dt>Stones</dt><dd>{e(stone_names(p["stones"]))}</dd></div>
       <div><dt>Made with</dt><dd>{e(FINISH[p["type"]])}</dd></div>
       <div><dt>Softest stone</dt><dd>Mohs {hardest}</dd></div>
-      <div><dt>Made by</dt><dd>Octavia, by hand</dd></div>
     </dl>
     <div class="field"><label for="size">Size</label>
       <select id="size">{"".join(f"<option>{e(s)}</option>" for s in sizes)}</select></div>
@@ -364,7 +363,7 @@ def build():
     <h1 style="font-size:clamp(40px,5vw,64px)"><span class="name">Davia</span> is David + Octavia.</h1>
     <p class="lede">Two people, bound to the Earth by the stones. We started Davias to bridge the gap between crystals and science: to show what's real, label what's tradition, and make something beautiful by hand either way.</p>
     <div class="people">
-      <div><b>Octavia</b><p>Designs and makes every piece by hand. The eye behind the color combinations.</p></div>
+      <div><b>Octavia</b><p>The eye behind the color combinations.</p></div>
       <div><b>David</b><p>Runs the shop, the science, the stories, and everything in between.</p></div>
     </div>
   </div>
@@ -377,7 +376,7 @@ def build():
   <div class="prose"><span class="eyebrow">How it's made</span>
     <h3>Built to last</h3><p>Bracelets and necklaces are strung on nylon-coated stainless beading wire with solid metal clasps, not the cheap stretch cord most crystal jewelry uses.</p>
     <h3>Beach and casual pieces</h3><p>Waxed cord with a sliding knot: adjustable and water-resistant.</p>
-    <h3>Made in small batches</h3><p>Octavia makes each piece by hand, so no two are exactly alike.</p></div>
+    </div>
 </div></section>
 """, desc="Davias is David + Octavia: handmade crystal jewelry, science first.", current="about.html")
 

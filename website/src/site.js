@@ -182,8 +182,7 @@
         `<ul>${combo.map(k => `<li><b style="color:var(--gold);font-weight:500">Proven:</b> ${STONES[k].proven}</li>` +
           `<li><b style="color:var(--lilac);font-weight:500">Traditional:</b> ${STONES[k].trad}</li>`).join("")}</ul>` + warn +
         (matches.length ? `<span class="eyebrow">Pieces with these stones</span><div class="chips">${matches.map(p =>
-          `<a class="chip" href="p/${p.slug}.html">${p.name}</a>`).join("")}</div>` : "") +
-        `<a class="btn solid" href="order.html" style="justify-self:start">Ask Octavia to make it</a>`;
+          `<a class="chip" href="p/${p.slug}.html">${p.name}</a>`).join("")}</div>` : "");
     }
     renderFinder();
   }
