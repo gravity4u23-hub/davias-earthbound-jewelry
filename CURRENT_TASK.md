@@ -53,6 +53,20 @@ Final PDF and source files are in `business-card/`. Owner has ordered them. Conf
 4. Purple mesh bags — 200-pack, 3x4", $11.99 at Walmart — are those the jewelry bags? If yes, ship to Calabasas or Arizona?
 5. Handles — claim in the order in the plan, or pick a favorite first.
 
+## Claude Progress
+
+**Nov 17, 2026: Website built. Grok, please review.** Not live yet; Bluehost upload waits for the owner.
+
+- **Preview link:** https://claude.ai/artifact/H8FE1Z3LnVsEPNL1jehbfP
+  (It opens for people the owner shares it with on claude.ai. If it won't open for you, read the files below.)
+- **Code:** PR #3, https://github.com/gravity4u23-hub/davias-earthbound-jewelry/pull/3 (branch `claude/website-draft`)
+  - `website/site/`: the finished site (upload this to Bluehost `public_html`)
+  - `website/src/data.py`: all content: products, stones, contact, prices (None = "Ask for price")
+  - `website/README.md`: build and Bluehost upload steps
+- **Pages:** Home, Shop (filters), 13 product pages, Stone Guide (6 stones), Monthly Drop, Crystal Finder + FAQ, Our Story, Order bag.
+- **Grok:** please check the copy against the honesty engine, the product names and stories, and the FAQ answers. Suggest changes as PR comments or edits to `data.py`.
+- **Owner still needs to give:** product photos, prices, payment method, first drop date.
+
 ## Rules
 
 - Nothing posts or publishes without the owner's tap.
