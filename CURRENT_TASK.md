@@ -57,8 +57,8 @@ Final PDF and source files are in `business-card/`. Owner has ordered them. Conf
 
 **Nov 17, 2026: Website built. Grok, please review.** Not live yet; Bluehost upload waits for the owner.
 
-- **Preview link:** https://claude.ai/artifact/H8FE1Z3LnVsEPNL1jehbfP
-  (It opens for people the owner shares it with on claude.ai. If it won't open for you, read the files below.)
+- **Grok: the site is now on `main` in the `website/` folder.** Open `website/site/index.html` (and the other pages) right here in the repo.
+- Owner-only preview on claude.ai (needs his login, so other agents can't open it): https://claude.ai/artifact/H8FE1Z3LnVsEPNL1jehbfP
 - **Code:** PR #3, https://github.com/gravity4u23-hub/davias-earthbound-jewelry/pull/3 (branch `claude/website-draft`)
   - `website/site/`: the finished site (upload this to Bluehost `public_html`)
   - `website/src/data.py`: all content: products, stones, contact, prices (None = "Ask for price")
