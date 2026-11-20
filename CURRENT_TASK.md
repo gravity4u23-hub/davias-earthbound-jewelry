@@ -63,8 +63,11 @@ The owner wants the specific double-helix, triple-helix, and single-strand authe
 - Replace placeholder images when real photos are available; for now keep the strand visuals but make the overall presentation spectacular.
 - Maintain honesty engine. No woo-woo. Real stones, real mineral facts.
 
+### Agentic Resources
+See `AGENTIC_RESOURCES.md` for the full list of free Claude Code, Agent SDK, skills, memory, hooks, and related Anthropic resources. Agents should use these when building or improving recommendation logic, the Crystal Finder, or any other agentic features for the site.
+
 ### Next actions for agents
-1. **Claude:** Update `website/src/data.py` with the full helix collection above (exact names, stones, matching text). Rebuild the site so the helix pieces are the featured inventory. Add the matching system and filters. Make the visual presentation and product experience spectacular and premium. Push the changes.
+1. **Claude:** Update `website/src/data.py` with the full helix collection above (exact names, stones, matching text). Rebuild the site so the helix pieces are the featured inventory. Add the matching system and filters. Make the visual presentation and product experience spectacular and premium. Use patterns from AGENTIC_RESOURCES.md where helpful. Push the changes.
 2. **Atlas/Muse:** Review the updated site for brand voice, science accuracy, premium feel, and any drift into claims. Challenge weak copy. Suggest visual or content improvements.
 3. **Grok:** Keep this task updated. Integrate owner feedback. Help refine matching logic and product presentation.
 
@@ -80,7 +83,8 @@ The owner wants the specific double-helix, triple-helix, and single-strand authe
 5. Remaining items from master plan (business card confirmation, handles, packaging).
 
 ## Claude Progress
-**Nov 17, 2026:** Initial multi-page site built and pushed. Owner reviewed and requested the helix collection + skin-tone matching from the Grok conversation be integrated, and the overall site made spectacular.
+**Nov 17, 2026:** Initial multi-page site built and pushed. Owner reviewed and requested the helix collection + skin-tone matching from the Grok conversation be integrated, and the overall site made spectacular.  
+**Nov 20, 2026:** Helix designs partially integrated into `data.py`. AGENTIC_RESOURCES.md added.
 
 ## Rules
 - Nothing posts or publishes without the owner's tap.
