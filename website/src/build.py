@@ -13,7 +13,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from data import DROP, FAQ, PRODUCTS, SITE, STONES, THEMES, TYPES, FINISH
+from data import DROP, FAQ, FINDER, PRODUCTS, SITE, STONES, THEMES, TYPES, FINISH, undertones
 
 SRC = Path(__file__).parent
 OUT = SRC.parent / "site"
@@ -167,7 +167,9 @@ def build():
     og = logo.copy(); og.thumbnail((1200, 630)); canvas = Image.new("RGB", (1200, 630), (18, 20, 28))
     canvas.paste(og, ((1200 - og.width) // 2, (630 - og.height) // 2)); canvas.save(OUT / "og-image.jpg", quality=86)
 
-    data = {"site": SITE, "stones": STONES, "types": TYPES, "products": PRODUCTS}
+    products = [dict(p, undertones=undertones(p["matching"])) if p.get("matching") else p for p in PRODUCTS]
+    finder = {"color": FINDER["color"], "feel": [f[:3] for f in FINDER["feel"]], "undertone": FINDER["undertone"]}
+    data = {"site": SITE, "stones": STONES, "types": TYPES, "products": products, "finder": finder}
     (OUT / "data.js").write_text("window.DAVIAS = " + json.dumps(data) + ";\n", encoding="utf-8")
 
     # ---------- Home ----------
@@ -372,6 +374,7 @@ def build():
       <fieldset><legend>Which colors do you love?</legend><div class="opts" id="opt-color"></div></fieldset>
       <fieldset><legend>What tradition speaks to you?</legend><div class="opts" id="opt-feel"></div></fieldset>
       <fieldset><legend>How will you wear it?</legend><div class="opts" id="opt-wear"></div></fieldset>
+      <fieldset><legend>Your skin's undertone</legend><div class="opts" id="opt-undertone"></div></fieldset>
     </form>
     <div class="result" id="finder-result" aria-live="polite"></div>
   </div>
