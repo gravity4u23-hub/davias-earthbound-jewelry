@@ -97,7 +97,7 @@
       filters.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b));
       const f = b.dataset.filter;
       document.querySelectorAll("#products .piece").forEach(card => {
-        const show = f === "all" || card.dataset.type === f || card.dataset.stones.split(",").includes(f);
+        const show = f === "all" || card.dataset.type === f || card.dataset.helix === f || card.dataset.stones.split(",").includes(f);
         card.hidden = !show;
       });
     });

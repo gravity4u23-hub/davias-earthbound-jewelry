@@ -66,6 +66,9 @@ All pieces are real natural crystals. Honesty engine applies: Proven mineral fac
     Construction: Single Strand  
     Complements: Warm and olive skin · Brown eyes · Warm hair.
 
+## Launch set (Nov 21, 2026)
+On the site now: Violet Vortex, Earthfire Twist, Blush Trinity, Amethyst Strand, Tiger's Eye Strand. The other 7 designs (Reef Ripple, Ember & Ice, Northern Lights, Jungle Gold, Amber Mist, Lapis Current, Obsidian Spiral) come next: each needs Proven / Traditional stone profiles in `website/src/data.py` first. Amber is fossil resin and obsidian is volcanic glass, so the homepage's "natural stone" wording needs a carve-out when they land.
+
 ## Notes for implementation
 - Feature these on the Home and Shop pages.
 - Add filters: All / Double Helix / Triple Helix / Single Strand.
