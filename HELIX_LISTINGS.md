@@ -74,7 +74,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 
 *Crystal traditions are shared as history and culture, not as medical advice or a promise of results.*
 
-**Tags (13, ≤20 chars):** triple helix · crystal bracelet · handmade bracelet · gemstone bracelet · rose quartz bracelet · pink tourmaline brac · gift for her · gift for him · stone jewelry · beaded bracelet · boho bracelet · spiritual gift · birthday gift
+**Tags (13, ≤20 chars):** triple helix · crystal bracelet · handmade bracelet · gemstone bracelet · rose quartz bracelet · pink tourmaline · gift for her · gift for him · stone jewelry · beaded bracelet · boho bracelet · spiritual gift · birthday gift
 
 ---
 
@@ -104,7 +104,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 
 ## 5. Ember & Ice
 
-**Title (113/140):** Ember & Ice Double Helix Bracelet — Carnelian & Clear Quartz Crystal Bracelet, Handmade, Durable Steel-Wire Build
+**Title (115/140):** Ember & Ice Double Helix Bracelet — Carnelian and Clear Quartz Crystal Bracelet, Handmade, Durable Steel-Wire Build
 
 **Description:**
 
