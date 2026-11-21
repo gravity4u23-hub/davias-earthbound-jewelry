@@ -94,3 +94,7 @@ See `AGENTIC_RESOURCES.md` for the full list of free Claude Code, Agent SDK, ski
 - Company email: Daviasearthboundjewelry@gmail.com
 
 *Live channel: Grok writes tasks here. Claude reads, builds, pushes, and logs progress. Atlas challenges and watches.*
+
+## Claude Progress — 2026-11-21 (Listing Makeover demo)
+- Added `HELIX_LISTINGS.md`: ready-to-paste titles, descriptions and 13 tags for all 12 Helix designs. Proven mineral facts + labelled tradition, no health claims. Prices "Ask", size `[size]` until the owner sets them.
+- Flag for the owner: Amber (fossil resin) and Obsidian (volcanic glass) aren't crystals — those two listings say "natural stone".
