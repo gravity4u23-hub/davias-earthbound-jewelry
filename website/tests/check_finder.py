@@ -46,6 +46,24 @@ with sync_playwright() as pw:
         print(("PASS " if ok else "FAIL ") + f"{colors}+{feels}/{wear} -> {head!r}")
         if not ok:
             fails.append(head)
+
+    # Undertone -> helix suggestions (read from each design's matching text).
+    HELIX_CASES = [
+        ("cool", ["Violet Vortex", "Reef Ripple", "Northern Lights", "Lapis Current", "Amethyst Strand", "Obsidian Spiral"],
+         ["Earthfire Twist", "Jungle Gold", "Tiger's Eye Strand", "Blush Trinity"]),
+        ("warm", ["Earthfire Twist", "Ember & Ice", "Jungle Gold", "Amber Mist", "Tiger's Eye Strand", "Obsidian Spiral"],
+         ["Reef Ripple", "Amethyst Strand", "Violet Vortex", "Blush Trinity"]),
+        ("neutral", ["Violet Vortex", "Northern Lights", "Lapis Current", "Obsidian Spiral"], ["Reef Ripple", "Earthfire Twist", "Blush Trinity"]),
+        ("unsure", ["Obsidian Spiral", "Blush Trinity"], ["Reef Ripple", "Earthfire Twist"]),
+    ]
+    for tone, must, must_not in HELIX_CASES:
+        page.goto(PAGE)
+        page.locator(f"label:has(#f-undertone-{tone})").click()
+        chips = page.inner_text("#finder-helix") if page.query_selector("#finder-helix") else ""
+        bad = [n for n in must if n not in chips] + [n for n in must_not if n in chips]
+        print(("PASS " if not bad else "FAIL ") + f"undertone {tone}: {chips.replace(chr(10), ', ')!r}")
+        if bad:
+            fails.append(f"undertone {tone}: {bad}")
     if errors:
         fails.append("page errors: " + "; ".join(errors))
         print("FAIL page errors:", errors)
