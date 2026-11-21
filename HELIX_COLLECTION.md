@@ -2,7 +2,9 @@
 
 Featured authentic crystal bracelets. Exact names, stone combinations, construction, and skin-tone / eye / hair matching. Use these as the primary bracelet inventory.
 
-All pieces are real natural crystals. Honesty engine applies: Proven mineral facts only; traditional meanings labeled as tradition.
+All pieces use natural materials (amber is fossil resin and obsidian is volcanic glass, both labelled). Honesty engine applies: Proven mineral facts only; traditional meanings labeled as tradition.
+
+**Stone profiles live in `website/src/data.py` (`STONES`), not here.** Change a design's stones here and add or edit its profile there; `website/tests/check_site.py` fails if the two drift.
 
 ## Designs
 
