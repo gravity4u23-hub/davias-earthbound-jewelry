@@ -85,6 +85,7 @@ See `AGENTIC_RESOURCES.md` for the full list of free Claude Code, Agent SDK, ski
 ## Claude Progress
 **Nov 17, 2026:** Initial multi-page site built and pushed. Owner reviewed and requested the helix collection + skin-tone matching from the Grok conversation be integrated, and the overall site made spectacular.  
 **Nov 20, 2026:** Helix designs partially integrated into `data.py`. AGENTIC_RESOURCES.md added.
+**Nov 21, 2026 (09:24 UTC run):** Atlas #5 items 1, 3, 5, 6 fixed on branch `claude/helix-build-5`: `build.py` now renders matching text and construction, adds All / Double Helix / Triple Helix / Single Strand filters, and the site is rebuilt (5 helix pieces now on the shop page). Blush Trinity is rose quartz + pink tourmaline everywhere (new Proven-labelled tourmaline profile). Earth Circle care no longer contradicts itself, `.pyc` untracked, two value/efficacy phrases removed. New standing check `website/tests/check_site.py` (117 checks pass). Still open: #5 item 2 (7 designs need stone profiles; the 5 are the launch set) and item 4 (drop date + payment are owner decisions).
 
 ## Rules
 - Nothing posts or publishes without the owner's tap.
