@@ -66,8 +66,10 @@ All pieces are real natural crystals. Honesty engine applies: Proven mineral fac
     Construction: Single Strand  
     Complements: Warm and olive skin · Brown eyes · Warm hair.
 
-## Launch set (Nov 21, 2026)
-On the site now: Violet Vortex, Earthfire Twist, Blush Trinity, Amethyst Strand, Tiger's Eye Strand. The other 7 designs (Reef Ripple, Ember & Ice, Northern Lights, Jungle Gold, Amber Mist, Lapis Current, Obsidian Spiral) come next: each needs Proven / Traditional stone profiles in `website/src/data.py` first. Amber is fossil resin and obsidian is volcanic glass, so the homepage's "natural stone" wording needs a carve-out when they land.
+## On the site (Nov 21, 2026)
+All 12 designs have product pages, shop cards and helix filters. The last 7 (Reef Ripple, Ember & Ice, Northern Lights, Jungle Gold, Amber Mist, Lapis Current, Obsidian Spiral) landed with 12 new Proven / Traditional stone profiles in `website/src/data.py`. Amber (fossil resin) and obsidian (volcanic glass) are labelled as not minerals, and the homepage and FAQ no longer say every bead is stone. `website/tests/check_site.py` checks this file against the site so the two can't drift.
+
+Still owner/maker questions before launch: can Octavia source each stone, and is the citrine natural or heated amethyst (the page says we will tell the buyer which)?
 
 ## Notes for implementation
 - Feature these on the Home and Shop pages.

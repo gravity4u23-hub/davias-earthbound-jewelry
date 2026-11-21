@@ -12,6 +12,8 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "src"))
 from data import PRODUCTS, STONES  # noqa: E402
 
+HELIX_NAMES = {"Double": "Double Helix", "Triple": "Triple Helix", "Single": "Single Strand"}
+
 SITE = ROOT / "site"
 fails = []
 
@@ -72,6 +74,41 @@ for p in PRODUCTS:
     if "selenite" in p["stones"]:
         page = (SITE / "p" / f"{p['slug']}.html").read_text(encoding="utf-8")
         check("beach-ready" not in page and "for the beach" not in page, f"{p['name']} (selenite) not sold as beach-ready")
+
+# 9. HELIX_COLLECTION.md and the site agree: all 12 designs, same stones, same construction (Atlas #5 item 2).
+doc = (ROOT.parent / "HELIX_COLLECTION.md").read_text(encoding="utf-8").replace("\u2019", "'")
+designs = re.findall(r"\*\*(.+?)\*\*\s*\n\s*Stones: (.+?)\s*\n\s*Construction: (.+?)\s*\n", doc)
+check(len(designs) == 12, f"HELIX_COLLECTION.md lists 12 designs (found {len(designs)})")
+by_name = {p["name"]: p for p in PRODUCTS}
+name_to_key = {s["name"].lower(): k for k, s in STONES.items()}
+for name, stones, construction in designs:
+    p = by_name.get(name)
+    check(p is not None, f"helix design {name} is a product")
+    if not p:
+        continue
+    want = [name_to_key.get(x.strip().lower()) for x in stones.split("+")]
+    check(sorted(want) == sorted(p["stones"]), f"{name} stones match the doc ({stones})")
+    check(HELIX_NAMES.get(p.get("helix")) == construction.strip(), f"{name} construction is {construction.strip()}")
+
+# 10. Not every bead is stone: amber is resin, obsidian is glass. No page may say otherwise.
+for f in [SITE / "index.html", SITE / "finder.html"]:
+    if f.exists():
+        text = f.read_text(encoding="utf-8")
+        check("natural stone beads" not in text and "Every bead is natural stone" not in text,
+              f"{f.name} does not call every bead stone")
+for k in ("amber", "obsidian"):
+    check(k in STONES and "Not a mineral" in STONES[k]["proven"], f"{k} profile exists and says it is not a mineral")
+
+# 11. Homepage hardness range matches the stones we actually use.
+lo, hi = min(s["mohs"] for s in STONES.values()), max(s["mohs"] for s in STONES.values())
+check(f"Mohs {lo:g}–{hi:g}" in home, f"home shows Mohs {lo:g}–{hi:g}")
+
+# 12. Soft or porous stones (Mohs under 5.5 or 'Keep it dry') never get 'soap and water is fine' on their piece.
+for p in PRODUCTS:
+    if any("Keep it dry" in STONES[k]["care"] for k in p["stones"]):
+        page = (SITE / "p" / f"{p['slug']}.html").read_text(encoding="utf-8")
+        care = re.search(r'<div class="label care"><h4>Care</h4><p>(.*?)</p>', page).group(1)
+        check("soap and water is fine" not in care, f"{p['name']} care keeps soft stones dry")
 
 print(f"\n{len(fails)} failure(s)")
 sys.exit(1 if fails else 0)
