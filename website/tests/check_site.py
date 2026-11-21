@@ -133,5 +133,13 @@ for name, want in UNDERTONE_EXPECT.items():
     got = undertones(p["matching"]) if p else None
     check(got == want, f"{name} undertones {want} (got {got})")
 
+# 14. The finder tells olive-skinned shoppers to try Warm; that only holds if every olive design also says warm.
+for p in PRODUCTS:
+    skin = (p.get("matching") or "").split("·")[0].lower()
+    if "olive" in skin:
+        check("warm" in skin, f"{p['name']}: names olive and warm (finder's olive note stays true)")
+js = (SITE / "site.js").read_text(encoding="utf-8")
+check("Olive skin? Every design that names olive also names warm" in js, "finder carries the olive note")
+
 print(f"\n{len(fails)} failure(s)")
 sys.exit(1 if fails else 0)

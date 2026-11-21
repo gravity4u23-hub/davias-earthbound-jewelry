@@ -168,7 +168,8 @@
       const label = u === "unsure" ? "Helix designs not tied to an undertone" : `Helix designs styled for ${u} undertones`;
       return `<span class="eyebrow">${label}</span><div class="chips" id="finder-helix">${fit.map(p =>
         `<a class="chip" href="p/${p.slug}.html">${p.name}</a>`).join("")}</div>` +
-        `<p class="note">Undertone matching is styling advice, not a rule. Wear what you love.</p>`;
+        `<p class="note">Undertone matching is styling advice, not a rule. Wear what you love.` +
+        (u === "warm" || u === "unsure" ? "" : ` Olive skin? Every design that names olive also names warm, so try Warm.`) + `</p>`;
     }
     function renderFinder() {
       const score = {};
@@ -183,6 +184,9 @@
       }
       let warn = "";
       // Everyday wear: selenite (Mohs 2, dislikes water) never goes in the combo (Atlas davias #4 item 3).
+      // Amber is also Mohs 2 but stays: this rule is about water (selenite dissolves and pits), and
+      // amber is already sold as an everyday bracelet (Amber Mist). A general soft-stone rule would be
+      // an owner/maker call (Atlas davias #11 challenge 1).
       if (pick.wear === "every" && ranked.includes("selenite")) {
         ranked = ranked.filter(k => k !== "selenite");
         warn = `<p class="note">For special occasions you could add selenite. It is left out of everyday pieces: at Mohs 2 it scratches and dislikes water.</p>`;

@@ -353,6 +353,8 @@ def undertones(matching):
     (shown for every undertone). No undertone word (e.g. Blush Trinity's "Fair to
     medium skin") -> ["unspecified"], shown only under "Not sure", so the finder
     never invents a fit the text lacks.
+    "Olive" is not mapped to an undertone of its own: every design that names
+    olive also names warm, and the finder says so (check_site #14).
     """
     skin = matching.split("·")[0].lower()
     if "all skin" in skin:
