@@ -182,7 +182,7 @@ def build():
       <p class="lede">Natural crystal bracelets, earrings, necklaces and anklets. Every piece comes with the honest story of its stone: what science shows, what tradition says, and which is which.</p>
       <div class="ctas">
         <a class="btn solid" href="shop.html">Shop the collection</a>
-        <a class="btn ghost" href="drop.html">This month's drop</a>
+        <a class="btn ghost" href="drop.html">Monthly drop: coming soon</a>
       </div>
       <div class="facts">
         <div><b>100%</b>natural stone beads</div>
@@ -320,25 +320,25 @@ def build():
          current="stones.html")
 
     # ---------- Drop ----------
-    page("drop.html", "Monthly Drop", head("Monthly limited drop", "Once a month. One design. Then it's gone.",
-         f"Each drop is a small run, about {DROP['size']} pieces, open for a short window. When they sell out, the design retires. "
-         "If you got one, you have something few people will ever wear.") + f"""
+    page("drop.html", "Monthly Drop", head("Monthly limited drop: coming soon", "One design a month, made in a small run. The first date is not set yet.",
+         f"The plan: each drop is a small run, about {DROP['size']} pieces, open for a short window, and then the design retires. "
+         "Join the list and you hear the date first.") + f"""
 <section class="drop" style="border:0;padding-top:0"><div class="wrap">
   <div class="panel">
-    <span class="tag">This month's design</span>
+    <span class="tag">Planned first design</span>
     <h3>{e(DROP["name"])}</h3>
     <div class="strand" data-strand="{",".join(DROP["stones"])}" data-n="15" style="height:70px"></div>
     <p class="lede" style="font-size:16px">{e(DROP["text"])}</p>
     <div class="count" aria-label="Drop size and window">
       <div><b>{DROP["size"]}</b><small>pieces</small></div>
       <div><b>{DROP["hours"]}</b><small>hours</small></div>
-      <div><b>1</b><small>time only</small></div>
+      <div><b>1</b><small>run only</small></div>
     </div>
-    <p class="note">The opening date is announced first to the drop list, then on Instagram and TikTok.</p>
+    <p class="note">No date or checkout yet. The opening date goes to the drop list first, then to Instagram and TikTok.</p>
   </div>
   <div class="head" style="margin:0">
     <h3>Be first in line</h3>
-    <p class="lede">Drops sell out. The list hears about each one before anyone else.</p>
+    <p class="lede">The list hears about each drop before anyone else.</p>
     <form class="join" id="join">
       <label for="join-email" class="note" style="flex-basis:100%">Your email</label>
       <input id="join-email" type="email" placeholder="you@example.com" required>
@@ -348,7 +348,7 @@ def build():
     <h3 style="margin-top:24px">How a drop works</h3>
     <ul class="prose" style="padding-left:18px">
       <li>We say exactly how many were made. Every time.</li>
-      <li>The window opens for {DROP["hours"]} hours or until they're gone.</li>
+      <li>The window is planned at {DROP["hours"]} hours, or until the run is gone.</li>
       <li>Each piece still comes with its honest stone story.</li>
       <li>Founders Drops are numbered, 1 to 100.</li>
     </ul>

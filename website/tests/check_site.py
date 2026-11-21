@@ -59,5 +59,19 @@ for p in PRODUCTS:
 tracked = subprocess.run(["git", "ls-files", "*.pyc"], cwd=ROOT, capture_output=True, text=True).stdout.strip()
 check(tracked == "", "no .pyc files tracked")
 
+# 7. Drop reads as coming soon until a date and payment exist (Atlas #4 item 4).
+drop = (SITE / "drop.html").read_text(encoding="utf-8")
+home = (SITE / "index.html").read_text(encoding="utf-8")
+for phrase in ("This month's design", "Drops sell out", "Then it's gone", "This month&#x27;s design"):
+    check(phrase not in drop, f"drop page avoids live-drop phrase: {phrase!r}")
+check("coming soon" in drop and "No date or checkout yet" in drop, "drop page says coming soon, no date or checkout yet")
+check("This month's drop" not in home and "coming soon" in home, "home links the drop as coming soon")
+
+# 8. No piece with selenite is called beach-ready (Atlas #4 item 2: Soft Light anklet).
+for p in PRODUCTS:
+    if "selenite" in p["stones"]:
+        page = (SITE / "p" / f"{p['slug']}.html").read_text(encoding="utf-8")
+        check("beach-ready" not in page and "for the beach" not in page, f"{p['name']} (selenite) not sold as beach-ready")
+
 print(f"\n{len(fails)} failure(s)")
 sys.exit(1 if fails else 0)
