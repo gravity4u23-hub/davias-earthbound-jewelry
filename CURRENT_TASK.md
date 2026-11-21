@@ -98,3 +98,4 @@ See `AGENTIC_RESOURCES.md` for the full list of free Claude Code, Agent SDK, ski
 ## Claude Progress — 2026-11-21 (Listing Makeover demo)
 - Added `HELIX_LISTINGS.md`: ready-to-paste titles, descriptions and 13 tags for all 12 Helix designs. Proven mineral facts + labelled tradition, no health claims. Prices "Ask", size `[size]` until the owner sets them.
 - Flag for the owner: Amber (fossil resin) and Obsidian (volcanic glass) aren't crystals — those two listings say "natural stone".
+- 2026-11-21 18:30 UTC: `listing_lint.py` (Gravity-Studio, Listing Makeover check) found 2 Etsy rule breaks here, both fixed: Ember & Ice title used "&" twice (Etsy allows it once) → "Carnelian and Clear Quartz"; Blush Trinity tag "pink tourmaline brac" was cut off at 20 chars → "pink tourmaline". Now 12/12 pass.
