@@ -95,14 +95,14 @@ TYPES = {
     "bracelet": ("Bracelets", "Our heart. Sized to your wrist, finished like fine jewelry."),
     "earrings": ("Earrings", "Small stones with light that moves when you do."),
     "necklace": ("Necklaces", "Longer strands and single pendant stones."),
-    "anklet": ("Anklets", "Summer pieces, beach-ready, made to layer."),
+    "anklet": ("Anklets", "Summer pieces made to layer. Each page says whether its stones can take water."),
 }
 
 # Construction, from BRACELET_CORD_OPTIONS.md.
 FINISH = {
     "bracelet": "Nylon-coated stainless beading wire with a solid metal clasp. No cheap stretch cord.",
     "necklace": "Nylon-coated stainless beading wire with a solid metal clasp.",
-    "anklet": "Waxed cord with a sliding knot: adjustable, water-resistant, beach-ready.",
+    "anklet": "Waxed cord with a sliding knot: adjustable and water-resistant. The stones decide if it goes to the beach.",
     "earrings": "Hypoallergenic hooks with metal findings.",
 }
 

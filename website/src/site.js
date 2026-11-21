@@ -167,9 +167,14 @@
         return;
       }
       let warn = "";
+      // Everyday wear: selenite (Mohs 2, dislikes water) never goes in the combo (Atlas davias #4 item 3).
       if (pick.wear === "every" && ranked.includes("selenite")) {
-        ranked = ranked.filter(k => k !== "selenite").concat("selenite");
-        warn = `<p class="note">For everyday wear, keep selenite as an accent: at Mohs 2 it scratches and dislikes water.</p>`;
+        ranked = ranked.filter(k => k !== "selenite");
+        warn = `<p class="note">For special occasions you could add selenite. It is left out of everyday pieces: at Mohs 2 it scratches and dislikes water.</p>`;
+      }
+      if (!ranked.length) {
+        out.innerHTML = `<h3>Selenite is for special occasions</h3><p class="lede" style="font-size:15px">Pick another color or tradition for an everyday piece, or switch to "Special occasions".</p>`;
+        return;
       }
       const combo = ranked.slice(0, 2);
       // Pieces that already use these stones.
