@@ -166,7 +166,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 
 **The stones**
 - **Citrine** — *Proven:* yellow quartz, Mohs 7. *Tradition:* known in trade lore as the 'merchant's stone' for abundance.
-- **Green Aventurine** — *Proven:* quartz with tiny mica flecks that sparkle, Mohs ~6.5. *Tradition:* traditionally a stone of luck.
+- **Green Aventurine** — *Proven:* quartz with tiny mica flecks that sparkle, Mohs 6.5–7. *Tradition:* traditionally a stone of luck.
 
 Every stone is natural, so color and pattern vary a little from piece to piece — yours is one of a kind.
 
