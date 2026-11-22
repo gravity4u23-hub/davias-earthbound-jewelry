@@ -2,13 +2,15 @@
 
 Ready-to-paste titles, descriptions and tags for Etsy / Shopify / the Davias site. Written by the Listing Makeover playbook (Gravity-Studio `portfolio/listing-makeover/`). This is our own shop, so it doubles as the live sample we show buyers.
 
+**Titles (Nov 22):** every title is under 15 words with no repeated word except where the stone is in the product's own name (Lapis Current), per Etsy's Seller Handbook title guidance (Aug 2025: "less than 15 words", "try not to repeat words"). Checked by `listing_lint.py --strict-titles`.
+
 **Honesty engine:** *Proven* = mineral facts. *Tradition* = labelled lore, never a health claim. **Prices:** Ask for price until the owner sets them. **Size:** `[size]` placeholder until the owner confirms the standard wrist size.
 
-> ⚠ **Owner check:** Amber (fossil resin) and Obsidian (volcanic glass) are natural stones but **not crystals**. Listings for Amber Mist and Obsidian Spiral say "natural stone" instead of "crystal" so the shop stays accurate.
+> ⚠ **Owner check:** Amber (fossil resin), Obsidian (volcanic glass) and Lapis Lazuli (a rock, mostly lazurite) are natural stones but **not crystals**. Listings for Amber Mist, Obsidian Spiral and Lapis Current say "natural stone" instead of "crystal" so the shop stays accurate.
 
 ## 1. Violet Vortex
 
-**Title (114/140):** Violet Vortex Double Helix Bracelet — Amethyst & Clear Quartz Crystal Bracelet, Handmade, Durable Steel-Wire Build
+**Title (90/140):** Violet Vortex Amethyst & Clear Quartz Crystal Bracelet — Double Helix, Handmade Steel Wire
 
 **Description:**
 
@@ -32,7 +34,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 
 ## 2. Earthfire Twist
 
-**Title (111/140):** Earthfire Twist Double Helix Bracelet — Tiger's Eye & Onyx Crystal Bracelet, Handmade, Durable Steel-Wire Build
+**Title (87/140):** Earthfire Twist Tiger's Eye & Onyx Crystal Bracelet — Double Helix, Handmade Steel Wire
 
 **Description:**
 
@@ -56,7 +58,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 
 ## 3. Blush Trinity
 
-**Title (120/140):** Blush Trinity Triple Helix Bracelet — Rose Quartz & Pink Tourmaline Crystal Bracelet, Handmade, Durable Steel-Wire Build
+**Title (85/140):** Blush Trinity Rose Quartz & Pink Tourmaline Crystal Bracelet — Triple Helix, Handmade
 
 **Description:**
 
@@ -80,7 +82,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 
 ## 4. Reef Ripple
 
-**Title (111/140):** Reef Ripple Double Helix Bracelet — Amazonite & Aquamarine Crystal Bracelet, Handmade, Durable Steel-Wire Build
+**Title (87/140):** Reef Ripple Amazonite & Aquamarine Crystal Bracelet — Double Helix, Handmade Steel Wire
 
 **Description:**
 
@@ -104,7 +106,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 
 ## 5. Ember & Ice
 
-**Title (115/140):** Ember & Ice Double Helix Bracelet — Carnelian and Clear Quartz Crystal Bracelet, Handmade, Durable Steel-Wire Build
+**Title (80/140):** Ember & Ice Carnelian and Clear Quartz Crystal Bracelet — Double Helix, Handmade
 
 **Description:**
 
@@ -128,7 +130,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 
 ## 6. Northern Lights
 
-**Title (116/140):** Northern Lights Double Helix Bracelet — Labradorite & Moonstone Crystal Bracelet, Handmade, Durable Steel-Wire Build
+**Title (92/140):** Northern Lights Labradorite & Moonstone Crystal Bracelet — Double Helix, Handmade Steel Wire
 
 **Description:**
 
@@ -152,7 +154,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 
 ## 7. Jungle Gold
 
-**Title (115/140):** Jungle Gold Double Helix Bracelet — Citrine & Green Aventurine Crystal Bracelet, Handmade, Durable Steel-Wire Build
+**Title (80/140):** Jungle Gold Citrine & Green Aventurine Crystal Bracelet — Double Helix, Handmade
 
 **Description:**
 
@@ -176,7 +178,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 
 ## 8. Amber Mist
 
-**Title (114/140):** Amber Mist Double Helix Bracelet — Amber & Smoky Quartz Natural Stone Bracelet, Handmade, Durable Steel-Wire Build
+**Title (82/140):** Amber Mist Smoky Quartz Natural Stone Bracelet — Double Helix, Handmade Steel Wire
 
 **Description:**
 
@@ -200,7 +202,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 
 ## 9. Lapis Current
 
-**Title (103/140):** Lapis Current Double Helix Bracelet — Lapis Lazuli Crystal Bracelet, Handmade, Durable Steel-Wire Build
+**Title (85/140):** Lapis Current Double Helix Bracelet — Lapis Lazuli Natural Stone, Handmade Steel Wire
 
 **Description:**
 
@@ -217,13 +219,13 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 
 *Crystal traditions are shared as history and culture, not as medical advice or a promise of results.*
 
-**Tags (13, ≤20 chars):** double helix · crystal bracelet · handmade bracelet · gemstone bracelet · lapis lazuli · gift for her · gift for him · stone jewelry · beaded bracelet · boho bracelet · spiritual gift · birthday gift · layering bracelet
+**Tags (13, ≤20 chars):** double helix · stone bracelet · handmade bracelet · gemstone bracelet · lapis lazuli · gift for her · gift for him · stone jewelry · beaded bracelet · boho bracelet · spiritual gift · birthday gift · layering bracelet
 
 ---
 
 ## 10. Obsidian Spiral
 
-**Title (126/140):** Obsidian Spiral Triple Helix Bracelet — Black Tourmaline & Obsidian Natural Stone Bracelet, Handmade, Durable Steel-Wire Build
+**Title (80/140):** Obsidian Spiral Black Tourmaline Natural Stone Bracelet — Triple Helix, Handmade
 
 **Description:**
 
@@ -247,7 +249,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 
 ## 11. Amethyst Strand
 
-**Title (102/140):** Amethyst Strand Single Strand Bracelet — Amethyst Crystal Bracelet, Handmade, Durable Steel-Wire Build
+**Title (71/140):** Amethyst Strand Crystal Bracelet — Beaded, Handmade, Durable Steel Wire
 
 **Description:**
 
@@ -270,7 +272,7 @@ Every stone is natural, so color and pattern vary a little from piece to piece �
 
 ## 12. Tiger's Eye Strand
 
-**Title (108/140):** Tiger's Eye Strand Single Strand Bracelet — Tiger's Eye Crystal Bracelet, Handmade, Durable Steel-Wire Build
+**Title (74/140):** Tiger's Eye Strand Crystal Bracelet — Beaded, Handmade, Durable Steel Wire
 
 **Description:**
 
