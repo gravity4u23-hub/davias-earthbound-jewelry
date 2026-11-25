@@ -109,6 +109,12 @@ def stone_names(keys):
 HELIX = {"Double": "Double Helix", "Triple": "Triple Helix", "Single": "Single Strand"}
 
 
+def mohs_range():
+    """Hardness span of every stone we use, so the homepage fact stays true as stones are added."""
+    vals = [s["mohs"] for s in STONES.values()]
+    return f"{min(vals):g}–{max(vals):g}"
+
+
 def helix_key(p):
     return f"helix-{p['helix'].lower()}" if p.get("helix") else ""
 
@@ -185,8 +191,8 @@ def build():
         <a class="btn ghost" href="drop.html">Monthly drop: coming soon</a>
       </div>
       <div class="facts">
-        <div><b>100%</b>natural stone beads</div>
-        <div><b>Mohs 2–7</b>every hardness, explained</div>
+        <div><b>100%</b>natural materials, labeled</div>
+        <div><b>Mohs {mohs_range()}</b>every hardness, explained</div>
         <div><b>0</b>medical claims, ever</div>
       </div>
     </div>
