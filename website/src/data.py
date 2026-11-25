@@ -82,6 +82,13 @@ STONES = {
         "care": "Durable. Mild soap and water is fine.",
         "no": "Emotional effects as a measured fact.",
     },
+    "ptourmaline": {
+        "name": "Pink Tourmaline", "colors": ["#e88aa8", "#d96b8f", "#f5b8c9"], "mohs": 7,
+        "proven": "A boron silicate crystal, Mohs 7–7.5. Tourmaline is piezoelectric and pyroelectric: pressure or a change in temperature makes a small electric charge.",
+        "trad": "Compassion and gentleness. Shared as tradition.",
+        "care": "Durable. Mild soap and water is fine.",
+        "no": "Emotional effects as a measured fact.",
+    },
 }
 
 TYPES = {
@@ -126,7 +133,7 @@ PRODUCTS = [
      "story": "A strand of purple jade with tiny dark spacers. Quiet, deep, elegant.",
      "matching": "Cool & neutral skin · Blue or green eyes · Dark hair."},
     {"slug": "golden-thread", "name": "Golden Thread", "type": "necklace", "stones": ["quartz"], "price": None,
-     "story": "Yellow quartz with one fine gold-tone accent. Looks far more expensive than it is.",
+     "story": "Yellow quartz with one fine gold-tone accent.",
      "matching": "Warm skin tones · Brown or amber eyes."},
     {"slug": "clear-intent", "name": "Clear Intent", "type": "earrings", "stones": ["clear", "selenite"], "price": None,
      "story": "Clear quartz and a touch of selenite. Minimal, bright, made for special days.",
@@ -150,12 +157,12 @@ PRODUCTS = [
      "story": "Tiger's eye and onyx twisted together. Warm gold against deep black.",
      "matching": "Warm & olive skin · Brown or hazel eyes · Warm brown or black hair.",
      "helix": "Double"},
-    {"slug": "blush-trinity", "name": "Blush Trinity", "type": "bracelet", "stones": ["rose", "clear"], "price": None,
-     "story": "Rose quartz and clear quartz in a triple helix. Soft blush that catches light from every angle.",
+    {"slug": "blush-trinity", "name": "Blush Trinity", "type": "bracelet", "stones": ["rose", "ptourmaline"], "price": None,
+     "story": "Rose quartz and pink tourmaline in a triple helix. Soft blush that catches light from every angle.",
      "matching": "Fair to medium skin · Light eyes · Blonde or light brown hair.",
      "helix": "Triple"},
     {"slug": "amethyst-strand", "name": "Amethyst Strand", "type": "bracelet", "stones": ["amethyst"], "price": None,
-     "story": "Single strand of amethyst. Clean, cool, and quietly powerful.",
+     "story": "Single strand of amethyst. Clean and cool, made to wear every day.",
      "matching": "Cool skin tones · Blue or violet eyes.",
      "helix": "Single"},
     {"slug": "tigers-eye-strand", "name": "Tiger's Eye Strand", "type": "bracelet", "stones": ["tiger"], "price": None,

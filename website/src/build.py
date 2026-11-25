@@ -106,16 +106,36 @@ def stone_names(keys):
     return " + ".join(STONES[k]["name"] for k in keys)
 
 
+HELIX = {"Double": "Double Helix", "Triple": "Triple Helix", "Single": "Single Strand"}
+
+
+def helix_key(p):
+    return f"helix-{p['helix'].lower()}" if p.get("helix") else ""
+
+
+def care_text(keys):
+    """One care line per piece. A stone that must stay dry (selenite) overrides
+    'soap and water is fine' for the whole piece, so the page never says both."""
+    cares = list(dict.fromkeys(STONES[k]["care"] for k in keys))
+    dry = [c for c in cares if "Keep it dry" in c]
+    if dry:
+        names = " and ".join(STONES[k]["name"] for k in keys if "Keep it dry" in STONES[k]["care"])
+        return f"Contains {names}, so the whole piece follows its care: " + " ".join(dry)
+    return " ".join(cares)
+
+
 def piece_card(p, root=""):
     label = TYPES[p["type"]][0][:-1] if p["type"] != "earrings" else "Earrings"
     price = f"${p['price']}" if p["price"] else "Ask for price"
     return (
-        f'<a class="card piece" href="{root}p/{p["slug"]}.html" data-type="{p["type"]}" data-stones="{",".join(p["stones"])}">'
+        f'<a class="card piece" href="{root}p/{p["slug"]}.html" data-type="{p["type"]}" data-helix="{helix_key(p)}" data-stones="{",".join(p["stones"])}">'
         f'<div class="photo"><div class="strand" data-strand="{",".join(p["stones"])}" data-n="9" style="width:84%;height:90px"></div>'
         f'<small>Photo coming soon</small></div>'
         f'<span class="tag">{label} · {e(stone_names(p["stones"]))}</span>'
         f'<div class="meta"><h3>{e(p["name"])}</h3><span>{price}</span></div>'
-        f'<p>{e(p["story"])}</p></a>'
+        f'<p>{e(p["story"])}</p>'
+        + (f'<p class="match"><small>Complements: {e(p["matching"])}</small></p>' if p.get("matching") else "")
+        + '</a>'
     )
 
 
@@ -215,12 +235,13 @@ def build():
 
     # ---------- Shop ----------
     type_btns = "".join(f'<button data-filter="{t}" aria-pressed="false">{e(v[0])}</button>' for t, v in TYPES.items())
+    helix_btns = "".join(f'<button data-filter="helix-{k.lower()}" aria-pressed="false">{e(v)}</button>' for k, v in HELIX.items())
     stone_btns = "".join(f'<button data-filter="{k}" aria-pressed="false">{e(s["name"])}</button>' for k, s in STONES.items())
     page("shop.html", "Shop", head("Shop", "Every piece, made by hand.",
          "Tap a piece for its stones, the science, and how it's made. Add it to your order bag and send it to us.") + f"""
 <section style="border:0;padding-top:0"><div class="wrap">
   <div class="filters" role="group" aria-label="Filter pieces">
-    <button data-filter="all" aria-pressed="true">All</button>{type_btns}{stone_btns}
+    <button data-filter="all" aria-pressed="true">All</button>{helix_btns}{type_btns}{stone_btns}
   </div>
   <div class="grid" id="products">{"".join(piece_card(p) for p in PRODUCTS)}</div>
   <div class="themes" style="margin-top:48px"><span class="eyebrow">Coming soon</span>
@@ -241,7 +262,7 @@ def build():
             f'<div class="label proven"><h4>{e(STONES[k]["name"])} · Proven</h4><p>{e(STONES[k]["proven"])}</p></div>'
             f'<div class="label trad"><h4>{e(STONES[k]["name"])} · Traditional</h4><p>{e(STONES[k]["trad"])}</p></div>'
             for k in p["stones"])
-        care = " ".join(dict.fromkeys(STONES[k]["care"] for k in p["stones"]))
+        care = care_text(p["stones"])
         hardest = min(STONES[k]["mohs"] for k in p["stones"])
         price = f"${p['price']}" if p["price"] else "Ask for price"
         related = [q for q in PRODUCTS if q is not p and set(q["stones"]) & set(p["stones"])][:3]
@@ -258,6 +279,8 @@ def build():
       <div><dt>Stones</dt><dd>{e(stone_names(p["stones"]))}</dd></div>
       <div><dt>Made with</dt><dd>{e(FINISH[p["type"]])}</dd></div>
       <div><dt>Softest stone</dt><dd>Mohs {hardest}</dd></div>
+      {f'<div><dt>Construction</dt><dd>{e(HELIX[p["helix"]])}</dd></div>' if p.get("helix") else ""}
+      {f'<div><dt>Complements</dt><dd>{e(p["matching"])}</dd></div>' if p.get("matching") else ""}
     </dl>
     <div class="field"><label for="size">Size</label>
       <select id="size">{"".join(f"<option>{e(s)}</option>" for s in sizes)}</select></div>
