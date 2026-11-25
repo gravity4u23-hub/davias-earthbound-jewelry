@@ -135,17 +135,19 @@
   // ---------- Crystal finder ----------
   const finder = document.getElementById("finder-form");
   if (finder) {
+    // Options come from data.py FINDER via data.js.
     const OPTS = {
-      color: [["gold", "Warm gold", ["quartz", "tiger"]], ["purple", "Purple", ["pjade"]], ["green", "Green", ["gjade"]], ["white", "White & clear", ["clear", "selenite"]]],
-      feel: [["calm", "Calm", ["pjade", "selenite"]], ["confidence", "Confidence", ["tiger"]], ["balance", "Balance", ["gjade"]], ["warmth", "Warmth & joy", ["quartz"]], ["clarity", "Clarity", ["clear", "selenite"]]],
+      color: D.finder.color, feel: D.finder.feel,
       wear: [["every", "Every day, all day", []], ["gentle", "Special occasions", []]],
+      undertone: D.finder.undertone,
     };
-    const pick = { color: new Set(["gold"]), feel: new Set(["confidence"]), wear: "every" };
+    const pick = { color: new Set(["gold"]), feel: new Set(["confidence"]), wear: "every", undertone: "unsure" };
+    const RADIO = ["wear", "undertone"];
     for (const [group, opts] of Object.entries(OPTS)) {
       const box = document.getElementById("opt-" + group);
-      const type = group === "wear" ? "radio" : "checkbox";
+      const type = RADIO.includes(group) ? "radio" : "checkbox";
       box.innerHTML = opts.map(([v, label]) => {
-        const checked = group === "wear" ? pick.wear === v : pick[group].has(v);
+        const checked = RADIO.includes(group) ? pick[group] === v : pick[group].has(v);
         return `<label><input type="${type}" name="${group}" id="f-${group}-${v}" value="${v}" ${checked ? "checked" : ""}><span>${label}</span></label>`;
       }).join("");
     }
@@ -153,8 +155,22 @@
       pick.color = new Set([...finder.querySelectorAll("input[name=color]:checked")].map(i => i.value));
       pick.feel = new Set([...finder.querySelectorAll("input[name=feel]:checked")].map(i => i.value));
       pick.wear = (finder.querySelector("input[name=wear]:checked") || {}).value || "every";
+      pick.undertone = (finder.querySelector("input[name=undertone]:checked") || {}).value || "unsure";
       renderFinder();
     });
+    // Helix designs styled for the chosen undertone, read from each design's matching text.
+    // "All skin tones" designs show for every answer; designs whose text names no undertone
+    // (e.g. Blush Trinity, matched by skin depth and hair) show only under "Not sure".
+    function helixFor(u) {
+      const helix = D.products.filter(p => p.helix && p.undertones);
+      const fit = helix.filter(p => u === "unsure" ? p.undertones.includes("any") || p.undertones.includes("unspecified") : p.undertones.includes(u) || p.undertones.includes("any"));
+      if (!fit.length) return "";
+      const label = u === "unsure" ? "Helix designs not tied to an undertone" : `Helix designs styled for ${u} undertones`;
+      return `<span class="eyebrow">${label}</span><div class="chips" id="finder-helix">${fit.map(p =>
+        `<a class="chip" href="p/${p.slug}.html">${p.name}</a>`).join("")}</div>` +
+        `<p class="note">Undertone matching is styling advice, not a rule. Wear what you love.` +
+        (u === "warm" || u === "unsure" ? "" : ` Olive skin? Every design that names olive also names warm, so try Warm.`) + `</p>`;
+    }
     function renderFinder() {
       const score = {};
       const add = (keys, w) => keys.forEach(k => score[k] = (score[k] || 0) + w);
@@ -163,11 +179,14 @@
       let ranked = Object.keys(score).sort((a, b) => score[b] - score[a]);
       const out = document.getElementById("finder-result");
       if (!ranked.length) {
-        out.innerHTML = `<h3>Choose a color or a tradition</h3><p class="lede" style="font-size:15px">Your combination appears here.</p>`;
+        out.innerHTML = `<h3>Choose a color or a tradition</h3><p class="lede" style="font-size:15px">Your combination appears here.</p>` + helixFor(pick.undertone);
         return;
       }
       let warn = "";
       // Everyday wear: selenite (Mohs 2, dislikes water) never goes in the combo (Atlas davias #4 item 3).
+      // Amber is also Mohs 2 but stays: this rule is about water (selenite dissolves and pits), and
+      // amber is already sold as an everyday bracelet (Amber Mist). A general soft-stone rule would be
+      // an owner/maker call (Atlas davias #11 challenge 1).
       if (pick.wear === "every" && ranked.includes("selenite")) {
         ranked = ranked.filter(k => k !== "selenite");
         warn = `<p class="note">For special occasions you could add selenite. It is left out of everyday pieces: at Mohs 2 it scratches and dislikes water.</p>`;
@@ -187,7 +206,7 @@
         `<ul>${combo.map(k => `<li><b style="color:var(--gold);font-weight:500">Proven:</b> ${STONES[k].proven}</li>` +
           `<li><b style="color:var(--lilac);font-weight:500">Traditional:</b> ${STONES[k].trad}</li>`).join("")}</ul>` + warn +
         (matches.length ? `<span class="eyebrow">Pieces with these stones</span><div class="chips">${matches.map(p =>
-          `<a class="chip" href="p/${p.slug}.html">${p.name}</a>`).join("")}</div>` : "");
+          `<a class="chip" href="p/${p.slug}.html">${p.name}</a>`).join("")}</div>` : "") + helixFor(pick.undertone);
     }
     renderFinder();
   }

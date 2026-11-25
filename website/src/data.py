@@ -311,3 +311,53 @@ FAQ = [
     ("How do I pay?",
      "For now we confirm every order by message first: the stones, your size, the price and shipping. We'll send payment details then. Online checkout is coming."),
 ]
+
+# Crystal Finder. Every stone is reachable by color, and every tradition option
+# lists only stones whose own "trad" line names one of its words (check_site #13).
+FINDER = {
+    "color": [
+        ("gold", "Warm gold & amber", ["quartz", "tiger", "citrine", "amber", "carnelian"]),
+        ("purple", "Purple", ["pjade", "amethyst"]),
+        ("green", "Green", ["gjade", "aventurine", "amazonite"]),
+        ("blue", "Blue", ["aquamarine", "lapis", "amazonite", "labradorite"]),
+        ("pink", "Pink", ["rose", "ptourmaline"]),
+        ("white", "White & clear", ["clear", "selenite", "moonstone"]),
+        ("dark", "Black & smoky", ["onyx", "obsidian", "btourmaline", "smoky", "labradorite"]),
+    ],
+    # (value, label, stones, words the stone's trad line must contain)
+    "feel": [
+        ("calm", "Calm", ["pjade", "selenite", "amethyst", "amazonite", "aquamarine"], ["calm"]),
+        ("confidence", "Confidence & courage", ["tiger", "carnelian", "aquamarine"], ["confidence", "courage"]),
+        ("balance", "Balance", ["gjade", "rose"], ["balance"]),
+        ("warmth", "Warmth & joy", ["quartz", "citrine", "amber"], ["warmth", "joy"]),
+        ("clarity", "Clarity", ["clear", "selenite", "amethyst"], ["clarity"]),
+        ("love", "Love & compassion", ["rose", "ptourmaline"], ["love", "compassion"]),
+        ("grounding", "Grounding & protection", ["onyx", "smoky", "obsidian", "btourmaline", "tiger"], ["grounding", "protection"]),
+        ("intuition", "Intuition & new beginnings", ["pjade", "amethyst", "labradorite", "moonstone"], ["intuition", "beginnings"]),
+        ("luck", "Luck & abundance", ["aventurine", "citrine", "gjade", "quartz"], ["luck", "abundance"]),
+        ("wisdom", "Wisdom & communication", ["lapis", "amazonite"], ["wisdom", "communication"]),
+    ],
+    "undertone": [
+        ("unsure", "Not sure"),
+        ("cool", "Cool"),
+        ("warm", "Warm"),
+        ("neutral", "Neutral"),
+    ],
+}
+
+
+def undertones(matching):
+    """Undertones a helix design is styled for, read from its own matching text.
+
+    Only the skin clause (before the first "·") counts. "All skin tones" -> ["any"]
+    (shown for every undertone). No undertone word (e.g. Blush Trinity's "Fair to
+    medium skin") -> ["unspecified"], shown only under "Not sure", so the finder
+    never invents a fit the text lacks.
+    "Olive" is not mapped to an undertone of its own: every design that names
+    olive also names warm, and the finder says so (check_site #14).
+    """
+    skin = matching.split("·")[0].lower()
+    if "all skin" in skin:
+        return ["any"]
+    found = [u for u in ("cool", "warm", "neutral") if u in skin]
+    return found or ["unspecified"]

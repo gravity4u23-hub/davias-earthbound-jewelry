@@ -110,5 +110,36 @@ for p in PRODUCTS:
         care = re.search(r'<div class="label care"><h4>Care</h4><p>(.*?)</p>', page).group(1)
         check("soap and water is fine" not in care, f"{p['name']} care keeps soft stones dry")
 
+# 13. Crystal Finder knows every stone, and its tradition options never outrun the stone profiles.
+from data import FINDER, undertones  # noqa: E402
+color_keys = {k for _, _, keys in FINDER["color"] for k in keys}
+check(color_keys == set(STONES), f"finder colors cover all {len(STONES)} stones (missing: {sorted(set(STONES) - color_keys)})")
+for value, label, keys, words in FINDER["feel"]:
+    for k in keys:
+        check(k in STONES, f"finder '{label}' stone {k} exists")
+        if k in STONES:
+            trad = STONES[k]["trad"].lower()
+            check(any(w in trad for w in words), f"finder '{label}' -> {STONES[k]['name']}: its tradition line says {'/'.join(words)}")
+data_js = (SITE / "data.js").read_text(encoding="utf-8")
+check('"finder"' in data_js and '"undertones"' in data_js, "data.js carries finder options and helix undertones")
+UNDERTONE_EXPECT = {  # read by hand from HELIX_COLLECTION.md skin clauses
+    "Violet Vortex": ["cool", "neutral"], "Earthfire Twist": ["warm"], "Blush Trinity": ["unspecified"],
+    "Reef Ripple": ["cool"], "Ember & Ice": ["warm"], "Northern Lights": ["cool", "neutral"],
+    "Jungle Gold": ["warm"], "Amber Mist": ["warm"], "Lapis Current": ["cool", "neutral"],
+    "Obsidian Spiral": ["any"], "Amethyst Strand": ["cool"], "Tiger's Eye Strand": ["warm"],
+}
+for name, want in UNDERTONE_EXPECT.items():
+    p = by_name.get(name)
+    got = undertones(p["matching"]) if p else None
+    check(got == want, f"{name} undertones {want} (got {got})")
+
+# 14. The finder tells olive-skinned shoppers to try Warm; that only holds if every olive design also says warm.
+for p in PRODUCTS:
+    skin = (p.get("matching") or "").split("·")[0].lower()
+    if "olive" in skin:
+        check("warm" in skin, f"{p['name']}: names olive and warm (finder's olive note stays true)")
+js = (SITE / "site.js").read_text(encoding="utf-8")
+check("Olive skin? Every design that names olive also names warm" in js, "finder carries the olive note")
+
 print(f"\n{len(fails)} failure(s)")
 sys.exit(1 if fails else 0)
